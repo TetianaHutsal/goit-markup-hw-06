@@ -319,14 +319,66 @@
             </a></li>
         </ul>
       </div>
+      <div class="footer-form">
+        <h2 class="footer-form-tytle">Subscribe</h2>
+        <form class="form-email">
+          <input class="form-input" type="text" name="user-email" placeholder="E-mail" required>
+          <button class="form-button" type="submit">Subscribe
+            <svg class="form-icons-frame" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg></button>
+        </form>
+      </div>
     </div>
   </footer>
+  <!-- modal window - overlay -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="close-button" data-modal-close type="button">
+      <button class="close-button-form" data-modal-close type="button">
         <svg class="icon-closebtn" width="8px" height="8px">
-          <use href="./images/closebtn.svg#icon-closebtn"></use>
+          <use href="./images/icons.svg#icon-closebtn"></use>
         </svg></button>
+      <form class="modal-form-window">
+        <p class="form-window-tytle">Leave your contacts and we will call you back</p>
+        <div class="form-window">
+          <label class="form-window-label" for="user-name">Name</label>
+          <input class="form-window-input" type="text" name="user-name" id="user-name" required>
+          <svg class="form-icons-window" width="18px" height="24px">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </div>
+        <div class="form-window">
+          <label class="form-window-label" for="user-phone">Phone</label>
+          <input class="form-window-input" type="tel" name="user-phone" id="user-phone" required>
+          <svg class="form-icons-window" width="18px" height="24px">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+        <div class="form-window">
+          <label class="form-window-label" for="user-email">Email</label>
+          <input class="form-window-input" type="email" name="user-email" id="user-email" required>
+          <svg class="form-icons-window" width="18px" height="24px">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+        <div class="form-window comment-window">
+          <label class="form-window-label" for="comment">Comment</label>
+          <textarea class="form-window-comment" id="comment" placeholder="Text input"></textarea>
+        </div>
+        <input class="form-input-accept visually-hidden" type="checkbox" name="accept" id="accept" required>
+        <label class="form-window-label form-accept-text" for="accept">
+          <span class="check-vector">
+            <svg class="form-check-vector" width="10px" height="8px">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </span>
+          <p>
+            I accept the terms and conditions of the
+            <a class="privacy-policy" href>Privacy Policy</a>
+          </p>
+        </label>
+        <button class="form-send-btn" type="submit">Send</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
